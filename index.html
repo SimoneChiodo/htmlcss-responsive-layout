@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Giallo Booleano</title>
 
-        <!-- FONTS -->
-        <!-- OPEN SANS  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- FONT AWESOME -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
         />
 
         <!-- CUSTOM CSS -->
@@ -26,16 +26,68 @@
         <!-- Main -->
         <main>
             <!-- Video Youtube -->
-            <section id="video"></section>
+            <section id="video">
+                <div class="container">
+                    <!-- Titolo -->
+                    <h3>DOLCI E DESSERTS</h3>
+                    <h2>
+                        Tiramisù
+                        <span class="d-none d-md-inline"
+                            >(Dolce Tradizionale)</span
+                        >
+                    </h2>
+
+                    <!-- Video -->
+                    <div class="row shadow">
+                        <div class="col">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/JVT900H6s0g?si=BpgHUIq4IkJK3EAX"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="col">
+                            <h4>In breve</h4>
+
+                            <ul>
+                                <li>Difficoltà: <b>Facile</b></li>
+                                <li>Tempo: <b>40 min</b></li>
+                                <li>Porzione per: <b>8 persone</b></li>
+                                <li>Costo: <b>contenuto</b></li>
+                                <li><b>Note:</b> +2 ore di riposo in frigo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- Icone Social -->
-            <section id="social"></section>
+            <section id="social">
+                <div class="container">
+                    <i class="fa-brands fa-facebook shadow"></i>
+                    <i class="fa-brands fa-twitter shadow"></i>
+                    <i class="fa-brands fa-instagram shadow"></i>
+                    <i class="fa-brands fa-pinterest shadow"></i>
+                    <i class="fa-brands fa-youtube shadow"></i>
+                </div>
+            </section>
 
             <!-- Banner Pubblicitario -->
-            <section id="advertisement"></section>
+            <section id="advertisement">
+                <div class="container d-none d-md-block">
+                    <img src="./img/banner.png" alt="banner-ad" />
+                </div>
+            </section>
 
             <!-- Presentazione Ricetta -->
-            <section id="presentation"></section>
+            <section id="presentation">
+                <h5>PRESENTATION</h5>
+            </section>
         </main>
 
         <!-- Footer -->
