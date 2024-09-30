@@ -376,6 +376,9 @@ footer li {
         MAIN
      ***********************/
     /* Video Youtube */
+    #video h2 {
+        font-size: 3rem;
+    }
     #video .row {
         flex-direction: row;
     }
