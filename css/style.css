@@ -29,7 +29,8 @@ body {
     font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
 
-b {
+b,
+strong {
     font-family: Montserrat-Bold;
 }
 
@@ -139,14 +140,14 @@ main {
 }
 
 .container-icon {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 45px;
+    height: 45px;
     text-align: center;
-    background-color: white;
+    line-height: 45px;
 
     display: inline-block;
+    background-color: white;
+    border-radius: 50%;
 }
 i[class*="facebook"] {
     color: #1a77f3;
@@ -174,14 +175,29 @@ i[class*="youtube"] {
     border-color: var(--orange);
     width: 100px;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-#presentation img {
+#presentation .container {
+    text-align: center;
 }
+#presentation img {
+    width: 400px;
+}
+
+#presentation p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    text-align: justify;
+
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
 #video {
     display: none;
 }
+
 /************************************************
     FOOTER 
  ************************************************/
