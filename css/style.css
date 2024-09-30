@@ -256,6 +256,27 @@ footer li {
 /************************************************
     RESPONSIVE: MOBILE-FIRST
  ************************************************/
+/* LARGE MOBILE */
+@media screen and (min-width: 576px) {
+    /***********************
+        MAIN
+     ***********************/
+    /* Presentazione Ricetta */
+    #presentation img {
+        float: left;
+        margin-right: 15px;
+    }
+    #presentation p {
+        text-align: start;
+    }
+
+    /* Icone Social */
+    .container-icon {
+        flex-basis: 16%;
+        border-radius: 20px;
+    }
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
     /***********************
@@ -314,10 +335,6 @@ footer li {
     #social .container {
         padding: 0 60px;
     }
-    .container-icon {
-        flex-basis: 16%;
-        border-radius: 20px;
-    }
 
     /* Banner Pubblicitario */
     #banner .container {
@@ -329,11 +346,8 @@ footer li {
     #presentation .center {
         text-align: left;
     }
-    #presentation img {
-        float: left;
-        margin-right: 15px;
-    }
     #presentation p {
+        text-align: justify;
         padding: 0;
         padding-bottom: 100px;
     }
