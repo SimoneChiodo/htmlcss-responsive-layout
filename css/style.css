@@ -72,17 +72,17 @@ ul {
     HEADER 
  ************************************************/
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
 
-    height: 50px;
     background-color: white;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-family: NerkoOne;
+    font-weight: normal;
     color: var(--orange);
 
     text-shadow: 2px 2px 3px darkgray;
@@ -120,9 +120,11 @@ main {
 #video .col:last-child {
     background-color: white;
     padding: 30px;
-    padding-bottom: 54px;
 }
 
+#video ul {
+    padding-bottom: 20px;
+}
 #video li {
     padding: 10px 0;
 }
@@ -166,6 +168,11 @@ i[class*="youtube"] {
 }
 
 /* Presentazione Ricetta */
+#presentation .container:first-child {
+    padding: 0 20px;
+    padding-top: 20px;
+}
+
 #presentation h5 {
     font-family: Montserrat-Bold;
     font-size: 2rem;
@@ -178,7 +185,7 @@ i[class*="youtube"] {
     margin-bottom: 30px;
 }
 
-#presentation .container {
+#presentation .center {
     text-align: center;
 }
 #presentation img {
@@ -194,19 +201,53 @@ i[class*="youtube"] {
     padding-bottom: 40px;
 }
 
-#video {
-    display: none;
-}
-
 /************************************************
     FOOTER 
  ************************************************/
+footer {
+    background-color: var(--purple);
+    color: white;
+}
+
+footer,
+.upper-footer,
+.lower-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+footer h6 {
+    font-family: Montserrat-Bold;
+    font-size: 1rem;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+footer li {
+    text-decoration: underline;
+    /* padding: 20px; */
+}
 
 /************************************************
     RESPONSIVE: MOBILE-FIRST
  ************************************************/
 /* TABLET */
 @media screen and (min-width: 768px) {
+    /***********************
+        UTILITIES
+     ***********************/
     .d-md-none {
         display: none;
     }
@@ -222,10 +263,78 @@ i[class*="youtube"] {
     .d-md-flex {
         display: flex;
     }
+
+    .container {
+        padding: 60px;
+    }
+    /***********************
+        HEADER 
+     ***********************/
+    header {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    /***********************
+        MAIN 
+     ***********************/
+    /* Video Youtube */
+    #video ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 0;
+    }
+    #video li {
+        flex-basis: calc(100% / 3);
+        padding-bottom: 20px;
+    }
+    #video .container {
+        padding-bottom: 40px;
+    }
+
+    /* Icone Social */
+    #social .container {
+        padding: 0 60px;
+    }
+    .container-icon {
+        flex-basis: 16%;
+        border-radius: 20px;
+    }
+
+    /* Banner Pubblicitario */
+    #banner .container {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    /* Presentazione Ricetta */
+    #presentation .center {
+        text-align: left;
+    }
+    #presentation img {
+        float: left;
+        margin-right: 15px;
+    }
+    #presentation p {
+        padding: 0;
+        padding-bottom: 100px;
+    }
+    /* Devo fare 2 assegnazioni diverse per questioni di specificita' */
+    #presentation .container:first-child {
+        padding: 0 60px; /* UGUALE */
+        padding-bottom: 10px;
+    }
+    #presentation .container {
+        padding: 0 60px; /* UGUALE */
+    }
 }
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
+    /***********************
+        UTILITIES
+     ***********************/
     .d-lg-none {
         display: none;
     }
