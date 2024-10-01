@@ -15,16 +15,6 @@
     box-sizing: border-box;
 }
 
-/************************************************
-    UTILITIES 
- ************************************************/
-.container {
-    margin: 0 auto;
-    padding: 20px;
-    width: 1100px;
-    max-width: 100%;
-}
-
 body {
     font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
@@ -32,10 +22,6 @@ body {
 b,
 strong {
     font-family: Montserrat-Bold;
-}
-
-.shadow {
-    box-shadow: 0 0 20px 1px gray;
 }
 
 img {
@@ -56,6 +42,20 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/************************************************
+    UTILITIES 
+ ************************************************/
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 1100px;
+    max-width: 100%;
+}
+
+.shadow {
+    box-shadow: 0 0 20px 1px gray;
 }
 
 .d-none {
